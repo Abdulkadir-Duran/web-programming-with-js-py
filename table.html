@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        table{
+            
+            border: 1px solid black;
+            border-collapse: collapse;
+            width: 100%;
+        }
+        th, td{
+            border: 1px solid black;
+
+            text-align: center;
+        }
+        th{
+            height: 50px;
+        }
+        tr:hover{
+            background: brown;
+        }
+        .container{
+            display: flex;
+            gap: 1rem;
+            margin-top: 2rem;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+        }
+        .container > div{
+            background-color: aqua;
+            flex: 1 1 32%;
+            height: 200px;
+        }
+        .container > div:nth-child(1){
+            flex: 1 1 90%;
+        }
+        
+    </style>
+</head>
+<body>
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>phone</th>
+                <th>address</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>
+                    Abdulkadir
+                </td>
+                <td>
+                    13205296991
+                </td>
+                <td>Wuxi</td>
+            </tr>
+        </tbody>
+    </table>
+    <div class="container">
+        <div >
+            <p>1. Hello, welcome this is box</p>
+        </div>
+        <div>
+            <p>2. Hello, welcome this is box</p>
+        </div>
+        <div>
+            <p>3. Hello, welcome this is box</p>
+        </div>
+        <div>
+            <p>4. Hello, welcome this is box</p>
+        </div>
+        <div>
+            <p>5. Hello, welcome this is box</p>
+        </div>
+        <div>
+            <p>6. Hello, welcome this is box</p>
+        </div>
+        <div >
+            <p>7. Hello, welcome this is box</p>
+        </div>
+        
+        
+    </div>
+</body>
+</html>
